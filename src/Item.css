@@ -1,0 +1,39 @@
+.item {
+    display: flex;
+	justify-content: space-between;
+	
+	padding: 5px;
+	border-bottom: 1px solid black;
+}
+.item:last-child {
+	border-width: 0px;
+}
+
+.item span {
+	margin-right: 8px;
+}
+.item span:last-child {
+	margin-right: 0px;
+}
+
+.item.completed {
+	background-color: lightgreen;
+}
+
+.item .title {
+	flex: 1 1 auto;
+}
+.item .buttons .delete {
+	font-weight: bold;
+	color: red;
+}
+.item .buttons .create {
+	font-weight: bold;
+	color: green;
+}
+
+.item input[type=checkbox] {
+	transform: scale(1.5);
+    position: relative;
+    top: -1px;
+}
